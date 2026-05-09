@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Social Psychology</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div>
+      <p class="eyebrow">Applied Social Psychology</p>
+      <h1>Interactive Reflection</h1>
+    </div>
+
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="concepts.html">Key Concepts</a>
+      <a href="interactive.html">Interactive</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero two-column">
+      <div>
+        <h2>Apply social psychology to everyday situations.</h2>
+        <p>
+          This page uses interactive examples to show how social psychology concepts can be applied to real social situations. 
+          Instead of only reading definitions, visitors can test their understanding by connecting scenarios to concepts such as aggression, helping behavior, and peacemaking.
+        </p>
+        <button id="themeButton" class="button" type="button">Change visual theme</button>
+      </div>
+
+      <img 
+        src="images/interactive-quiz.png" 
+        srcset="images/interactive-quiz.png 1x, images/interactive-quiz@2x.png 2x" 
+        width="900" 
+        height="600" 
+        alt="Pastel illustration representing an interactive psychology quiz">
+    </section>
+
+    <section class="quiz-panel" aria-label="Social psychology mini quiz">
+      <h2>Mini Quiz: Identifying a Concept</h2>
+      <p id="quizQuestion">
+        A student sees a group argument online and becomes more hostile after reading several angry comments. 
+        Which social psychology concept best explains this situation?
+      </p>
+
+      <div class="quiz-buttons">
+        <button class="answer" type="button" data-correct="false">Attraction and Intimacy</button>
+        <button class="answer" type="button" data-correct="true">Aggression</button>
+        <button class="answer" type="button" data-correct="false">Helping</button>
+      </div>
+
+      <p id="quizResult" class="result" aria-live="polite">Choose an answer to see feedback.</p>
+    </section>
+
+    <section class="reveal-panel">
+      <h2>Click-to-Reveal: Peacemaking Example</h2>
+      <p>
+        Social psychology also studies how conflict can be reduced when individuals or groups move away from competition and toward cooperation.
+      </p>
+
+      <button id="revealButton" class="button" type="button">Reveal example</button>
+
+      <p id="revealText">
+        Think about how a shared goal can reduce tension between groups.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Interactive elements are created with an external JavaScript file.</p>
+  </footer>
+</body>
+</html>
